@@ -1,0 +1,62 @@
+aside {
+  display: flex;
+  background-color: rgb(212 212 212);
+  flex-direction: column;
+  align-items: center;
+  width: 25%;
+  padding: 1%;
+}
+.asideForm {
+  background-color: #a7a7b5;
+  border: 1px solid gray;
+  margin-top: 5%;
+  border-radius: 10px;
+  height: 24%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.inputsWrapper {
+  height: 25%;
+  width: 85%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  align-items: center;
+}
+.createTagsInput {
+  height: 100%;
+  width: 70%;
+}
+.createTagsColor {
+  height: 100%;
+  width: 25%;
+}
+.buttonWrapper {
+  display: flex;
+  height: 25%;
+  width: 82%;
+  justify-content: center;
+  align-items: center;
+}
+.createTagsButton {
+  width: 100%;
+  height: 100%;
+  font-size: 1rem;
+  border-radius: 6px;
+  border-color: white;
+  cursor: pointer;
+}
+.userTags {
+  border: 1px solid gray;
+  margin-top: 6%;
+  border-radius: 10px;
+  background-color: #a7a7b5;
+  display: flex;
+  height: 56%;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+}

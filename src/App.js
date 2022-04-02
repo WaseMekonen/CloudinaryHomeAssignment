@@ -1,25 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { useState } from "react";
+import CreateTags from "./components/CreateTags";
+import Unassigned from "./components/Unassigned";
+import Context from "./contex/Contex";
 
-function App() {
+import styles from "./styles/App.module.css";
+
+const App = () => {
+  const [userTags, setUserTags] = useState([]);
+  const [tagName, setTagName] = useState("");
+  const [tagColor, setTagColor] = useState("");
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Context.Provider
+      value={
+        (userTags, setUserTags, tagName, setTagName, tagColor, setTagColor)
+      }
+    >
+      <div className={styles.App}>
+        <main>
+          <CreateTags />
+          <Unassigned />
+          {/* <UserTags /> */}
+        </main>
+      </div>
+      {/* <section>
+        {photos.map((photo) => (
+          <Picture key={photo.id} photo={photo} />
+        ))}
+      </section> */}
+    </Context.Provider>
   );
-}
+};
 
 export default App;

@@ -1,0 +1,11 @@
+.tagsCont {
+  height: 55%;
+  display: flex;
+  width: 98%;
+  justify-content: center;
+}
+.tags {
+  background-color: rgb(121, 121, 121);
+  height: 100%;
+  width: 100%;
+}
